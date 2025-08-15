@@ -41,6 +41,7 @@ const AppNavigator = () => {
           <Stack.Screen name="Logout" component={Logout} />
           <Stack.Screen name="My Orders" component={MyOrders} />
           <Stack.Screen name="My Profile" component={MyProfile} />
+          <Stack.Screen name="Login" component={Login} />
         </>
       ) : (
         <>

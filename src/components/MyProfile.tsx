@@ -98,10 +98,22 @@ const MyProfile = () => {
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
-          <Icon name="log-out-outline" size={20} color="#EF4444" />
-          <Text style={styles.logoutText}>Logout</Text>
-        </TouchableOpacity>
+         <TouchableOpacity
+  style={styles.logoutButton}
+  onPress={() => navigation.navigate('Login')}
+>
+  <Icon name="log-out-outline" size={20} color="#EF4444" />
+  <Text style={styles.logoutText}>Login</Text>
+</TouchableOpacity>
+
+       <TouchableOpacity
+  style={styles.logoutButton}
+  onPress={() => navigation.navigate('Logout')}
+>
+  <Icon name="log-out-outline" size={20} color="#EF4444" />
+  <Text style={styles.logoutText}>Logout</Text>
+</TouchableOpacity>
+
       </ScrollView>
     </>
   );
